@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Martin Iñaki Loriente | Academic Website</title>
+    <meta
+      name="description"
+      content="Personal academic website of Martin Iñaki Loriente, Argentinian economist and PhD student at Boston University."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1>Martin Iñaki Loriente</h1>
+        <p class="subtitle">Argentinian economist, PhD student at Boston University</p>
+        <p class="header-email">
+          <a href="mailto:lorientemi@gmail.com">lorientemi@gmail.com</a>
+        </p>
+        <nav aria-label="Primary navigation">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#papers">Papers</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">About</h2>
+        <p>
+          Argentinian economist and PhD student at Boston University. My research
+          interests include political economy, game theory, contract theory, and
+          auction design.
+        </p>
+      </section>
+
+      <section id="research" aria-labelledby="research-heading">
+        <h2 id="research-heading">Research</h2>
+        <ul class="research-list">
+          <li>
+            <h3>Undergraduate thesis: "Perfect Bayesian Equilibrium in Kuhn Poker"</h3>
+            <p>Brief description coming soon.</p>
+            <a href="assets/undergrad_thesis.pdf">PDF</a>
+          </li>
+          <li>
+            <h3>Graduate thesis: "Democracy Does Cause Happiness"</h3>
+            <p>Brief description coming soon.</p>
+            <a href="assets/graduate_thesis.pdf">PDF</a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="cv" aria-labelledby="cv-heading">
+        <h2 id="cv-heading">CV</h2>
+        <p><a class="button-link" href="assets/CV.pdf">View CV (PDF)</a></p>
+      </section>
+
+      <section id="papers" aria-labelledby="papers-heading">
+        <h2 id="papers-heading">Papers</h2>
+        <p>Working papers coming soon.</p>
+      </section>
+
+      <section id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact</h2>
+        <p>Email: <a href="mailto:lorientemi@gmail.com">lorientemi@gmail.com</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>© 2026 Martin Iñaki Loriente</p>
+      </div>
+    </footer>
+  </body>
+</html>
