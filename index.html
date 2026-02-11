@@ -19,7 +19,7 @@
       <p class="subtitle">Argentinian economist, PhD student at Boston University</p>
       <p class="header-email">
       <span>lorientemi@gmail.com</span>
-      <button onclick="copyEmail()" style="margin-left:10px;">Copy</button>
+      <button onclick="copyEmail(this)" style="margin-left:10px;">Copy</button>
       </p>
       <p class="header-linkedin">
       <a href="https://www.linkedin.com/in/martin-loriente/" target="_blank">
@@ -79,7 +79,7 @@
         <h2 id="contact-heading">Contact</h2>
         <p class="header-email">
         <span>lorientemi@gmail.com</span>
-        <button onclick="copyEmail()" style="margin-left:10px;">Copy</button>
+        <button onclick="copyEmail(this)" style="margin-left:10px;">Copy</button>
         </p>
         <p class="header-linkedin">
         <a href="https://www.linkedin.com/in/martin-loriente/" target="_blank">
@@ -95,14 +95,20 @@
       </div>
     </footer>
     <script>
-function copyEmail() {
-  const email = "lorientemi@gmail.com";
-  navigator.clipboard.writeText(email);
-  alert("Email copied to clipboard");
-}
-</script>
+function copyEmail(button) {
+  navigator.clipboard.writeText("lorientemi@gmail.com");
+  
+  const originalText = button.textContent;
+  button.textContent = "Copied ✓";
+  
+  setTimeout(() => {
+    button.textContent = originalText;
+    }, 1500);
+  }
+  </script>
   </body>
 </html>
+
 
 
 
