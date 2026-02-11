@@ -18,8 +18,9 @@
       <h1>Martin Iñaki Loriente</h1>
       <p class="subtitle">Argentinian economist, PhD student at Boston University</p>
       <p class="header-email">
-      <span>lorientemi@gmail.com</span>
-      <button onclick="copyEmail(this)" style="margin-left:10px;">Copy</button>
+      <a href="#" onclick="copyEmail(this); return false;" style="cursor:pointer;">
+      lorientemi@gmail.com
+      </a>
       </p>
       <p class="header-linkedin">
       <a href="https://www.linkedin.com/in/martin-loriente/" target="_blank">
@@ -93,19 +94,21 @@
       </div>
     </footer>
     <script>
-function copyEmail(button) {
-  navigator.clipboard.writeText("lorientemi@gmail.com");
-  
-  const originalText = button.textContent;
-  button.textContent = "Copied ✓";
-  
+function copyEmail(element) {
+  const email = "lorientemi@gmail.com";
+  navigator.clipboard.writeText(email);
+
+  const originalText = element.textContent;
+  element.textContent = "Copied!";
+
   setTimeout(() => {
-    button.textContent = originalText;
-    }, 1500);
-  }
-  </script>
+    element.textContent = originalText;
+  }, 1500);
+}
+    </script>
   </body>
 </html>
+
 
 
 
