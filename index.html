@@ -6,7 +6,7 @@
     <title>Martin Iñaki Loriente | Academic Website</title>
     <meta
       name="description"
-      content="Personal academic website of Martin Iñaki Loriente, Argentinian economist and PhD student at Boston University."
+      content="Personal academic website of Martin Iñaki Loriente, Argentinian economist and PhD student at University."
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -16,7 +16,7 @@
     <img src="assets/foto.png" alt="Martin Iñaki Loriente" style="width:180px;height:180px;object-fit:cover;object-position:50% 15%;border-radius:50%;">
     <div>
       <h1>Martin Iñaki Loriente</h1>
-      <p class="subtitle">Argentinian economist, PhD student at Boston University</p>
+      <p class="subtitle">Argentinian economist, PhD student at University</p>
       <p class="header-email">
       <a href="#" onclick="copyEmail(this); return false;" style="cursor:pointer;">
       lorientemi@gmail.com
@@ -39,7 +39,7 @@
       <section id="about" aria-labelledby="about-heading">
         <h2 id="about-heading">About</h2>
         <p>
-          Argentinian economist and PhD student at Boston University. My research
+          Argentinian economist and PhD student at University. My research
           interests include political economy, game theory, contract theory, and
           auction design.
         </p>
@@ -70,26 +70,35 @@
       </section>
 
       <section id="contact" aria-labelledby="contact-heading">
-        <h2 id="contact-heading">Contact</h2>
-        <p class="header-email">
-        <a href="#" onclick="copyEmail(this); return false;" style="cursor:pointer;">
-        lorientemi@gmail.com
-        </a>
-        </p>
-        <p class="header-linkedin">
-        <a href="https://www.linkedin.com/in/martin-loriente/" target="_blank">
-        linkedin.com/in/martin-loriente
-        </a>
-        </p>
-      </section>
-    </main>
+  <h2 id="contact-heading">Contact</h2>
 
-    <footer>
-      <div class="container">
-        <p>© 2026 Martin Iñaki Loriente</p>
-      </div>
-    </footer>
-    <script>
+  <p class="header-email">
+    <a href="#" onclick="copyEmail(this); return false;" style="cursor:pointer;">
+      lorientemi@gmail.com
+    </a>
+  </p>
+
+  <p class="header-linkedin">
+    <a href="https://www.linkedin.com/in/martin-loriente/" target="_blank" rel="noopener">
+      linkedin.com/in/martin-loriente
+    </a>
+  </p>
+
+  <p class="header-number">
+    <a href="#" onclick="copyPhone(this); return false;" style="cursor:pointer;">
+      +54 9 11 3123-1804
+    </a>
+  </p>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>© 2026 Martin Iñaki Loriente</p>
+  </div>
+</footer>
+
+<script>
 function copyEmail(element) {
   const email = "lorientemi@gmail.com";
   navigator.clipboard.writeText(email);
@@ -101,9 +110,23 @@ function copyEmail(element) {
     element.textContent = originalText;
   }, 1500);
 }
-    </script>
-  </body>
+
+function copyPhone(element) {
+  const phone = "+54 9 11 3123-1804";
+  navigator.clipboard.writeText(phone);
+
+  const originalText = element.textContent;
+  element.textContent = "Copied!";
+
+  setTimeout(() => {
+    element.textContent = originalText;
+  }, 1500);
+}
+</script>
+</body>
 </html>
+
+
 
 
 
