@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Martin Iñaki Loriente | Academic Website</title>
+    <meta
+      name="description"
+      content="Personal academic website of Martin Iñaki Loriente, Argentinian economist and PhD student at Arizona State University."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-bg" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <nav class="top-nav container" aria-label="Primary navigation">
+        <a class="brand-link" href="#top" aria-label="Martin Iñaki Loriente home">
+          <span class="brand-mark">ML</span>
+          <span>Martin Loriente</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#cv">CV</a></li>
+          <li><a href="#papers">Papers</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <section class="hero container" id="top" aria-labelledby="hero-heading">
+        <div class="hero-copy reveal-on-scroll">
+          <p class="eyebrow">Applied Theory · Political Economy · Auctions · Contracts</p>
+          <h1 id="hero-heading"><span>Martin Iñaki</span> <span>Loriente</span></h1>
+          <p class="subtitle">PhD student in Economics at Arizona State University</p>
+          <p class="hero-summary">
+            Argentinian economist working across applied theory, political
+            economy, auctions, and contracts.
+          </p>
+
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button-link button-primary" href="#research">View research</a>
+            <a class="button-link" href="cv.html">Open CV</a>
+            <button
+              class="copy-link"
+              type="button"
+              data-copy="lorientemi@gmail.com"
+              data-label="lorientemi@gmail.com"
+            >
+              lorientemi@gmail.com
+            </button>
+          </div>
+        </div>
+
+        <div class="portrait-panel reveal-on-scroll">
+          <div class="portrait-frame">
+            <img
+              src="assets/foto.png"
+              alt="Martin Iñaki Loriente"
+              class="portrait"
+            />
+          </div>
+          <div class="portrait-note" aria-label="Academic status">
+            <span>Economics PhD</span>
+            <strong>Arizona State University</strong>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="section-band" id="about" aria-labelledby="about-heading">
+        <div class="container two-column">
+          <div class="section-kicker reveal-on-scroll">
+            <span>01</span>
+            <h2 id="about-heading">About</h2>
+          </div>
+          <div class="section-content reveal-on-scroll">
+            <p class="lead">
+              I am an Argentinian economist and PhD student in Economics at
+              Arizona State University. My research interests are in applied
+              theory, political economy, auctions, and contracts. Before ASU, I
+              received my BA and MA in Economics from Universidad de San
+              Andrés.
+            </p>
+            <p class="lead about-secondary">
+              Outside academia, I enjoy chess, boxing, and playing the
+              saxophone. I am always happy to hear from people with questions,
+              comments, or a chess challenge.
+            </p>
+
+            <div class="interest-grid" aria-label="Research interests">
+              <span>Applied theory</span>
+              <span>Political economy</span>
+              <span>Auctions</span>
+              <span>Contracts</span>
+            </div>
+
+            <p class="about-meta">Born April 18, 2001 · Buenos Aires, Argentina</p>
+
+            <figure class="talk-photo reveal-on-scroll">
+              <img
+                src="assets/foto2.jpg"
+                alt="Martin Iñaki Loriente presenting applied theory at a conference"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band research-band" id="research" aria-labelledby="research-heading">
+        <div class="container">
+          <div class="section-heading reveal-on-scroll">
+            <div>
+              <span class="section-number">02</span>
+              <h2 id="research-heading">Research</h2>
+            </div>
+          </div>
+
+          <ul class="research-list">
+            <li class="research-card reveal-on-scroll">
+              <a class="paper-preview" href="democracy.html" aria-label="View Democracy Does Cause Happiness">
+                <img
+                  src="assets/democracy-preview.png"
+                  alt="Preview of Democracy Does Cause Happiness"
+                />
+              </a>
+              <div class="paper-details">
+                <p class="paper-meta">Graduate thesis · 2025</p>
+                <h3>Democracy Does Cause Happiness</h3>
+                <div class="paper-actions">
+                  <a class="button-link button-primary" href="democracy.html">View paper</a>
+                  <a class="button-link" href="appendix.html">Appendix</a>
+                  <a
+                    class="button-link"
+                    href="https://github.com/MartinLoriente/Democracy-Does-Cause-Happiness"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Code
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="research-card reveal-on-scroll">
+              <a class="paper-preview" href="poker.html" aria-label="View Perfect Bayesian Equilibrium in Kuhn Poker">
+                <img
+                  src="assets/poker-preview.png"
+                  alt="Preview of Perfect Bayesian Equilibrium in Kuhn Poker"
+                />
+              </a>
+              <div class="paper-details">
+                <p class="paper-meta">Undergraduate thesis · 2023</p>
+                <h3>Perfect Bayesian Equilibrium in Kuhn Poker</h3>
+                <div class="paper-actions">
+                  <a class="button-link button-primary" href="poker.html">View paper</a>
+                  <a
+                    class="button-link"
+                    href="https://github.com/MartinLoriente/PBE-in-Kuhn-Poker"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Code
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section-band cv-band" id="cv" aria-labelledby="cv-heading">
+        <div class="container cv-layout">
+          <div class="section-kicker reveal-on-scroll">
+            <span>03</span>
+            <h2 id="cv-heading">CV</h2>
+          </div>
+          <div class="cv-card reveal-on-scroll">
+            <a class="cv-preview" href="cv.html" aria-label="Open CV">
+              <img src="assets/cv-preview.png" alt="Preview of Martin Iñaki Loriente CV" />
+            </a>
+            <div>
+              <h3>Curriculum Vitae</h3>
+              <p>
+                Academic background, experience, and professional skills.
+              </p>
+              <div class="paper-actions">
+                <a class="button-link button-primary" href="cv.html">Open CV</a>
+                <a class="button-link" href="assets/CV.pdf">View PDF</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band" id="papers" aria-labelledby="papers-heading">
+        <div class="container two-column">
+          <div class="section-kicker reveal-on-scroll">
+            <span>04</span>
+            <h2 id="papers-heading">Papers</h2>
+          </div>
+          <div class="section-content reveal-on-scroll">
+            <p class="lead">Working papers coming soon.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band contact-band" id="contact" aria-labelledby="contact-heading">
+        <div class="container contact-layout">
+          <div class="section-kicker reveal-on-scroll">
+            <span>05</span>
+            <h2 id="contact-heading">Contact</h2>
+          </div>
+
+          <div class="contact-links reveal-on-scroll">
+            <a href="https://www.linkedin.com/in/martin-loriente/" target="_blank" rel="noopener">
+              <span>LinkedIn</span>
+              linkedin.com/in/martin-loriente
+            </a>
+            <a href="https://github.com/MartinLoriente" target="_blank" rel="noopener">
+              <span>GitHub</span>
+              github.com/MartinLoriente
+            </a>
+            <button
+              class="contact-copy"
+              type="button"
+              data-copy="lorientemi@gmail.com"
+              data-label="lorientemi@gmail.com"
+            >
+              <span>Email</span>
+              lorientemi@gmail.com
+            </button>
+            <a href="https://x.com/KikiLoriente" target="_blank" rel="noopener">
+              <span>X</span>
+              x.com/KikiLoriente
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <p>© 2026 Martin Iñaki Loriente</p>
+        <a href="#top">Back to top</a>
+      </div>
+    </footer>
+
+    <div class="copy-toast" role="status" aria-live="polite">Copied to clipboard</div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
